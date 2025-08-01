@@ -25,6 +25,7 @@ const images = [
 
 
 ];
+images.class = "backImg";
 const whatsappLinks = [
 "https://wa.me/2349026093462",
 "https://wa.me/2347026439424"
@@ -34,12 +35,14 @@ const whatsappLinks = [
 
 let currentIndex = Math.floor(Math.random() * images.length);
 background.style.backgroundImage = `url('${images[currentIndex]}')`;
+background.style.backgroundSize='cover';
 
 function changeBackground() {
     background.style.filter = 'brightness(0.7) blur(10px)';
     setTimeout(() => {
         currentIndex = Math.floor(Math.random() * images.length);
         background.style.backgroundImage = `url('${images[currentIndex]}')`;
+        background.style.backgroundSize= 'cover';
         background.style.filter = 'brightness(0.7)';
     }, 1000);
 }
