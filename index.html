@@ -3,23 +3,69 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FECA Nigeria" />
+    <meta property="og:description" content="FECA Nigeria, We Redeem the Desolation Of Our Land of our lands and generation" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="Fellowship website" />
+    <meta property="og:site_name" content="FECA Nigeria" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FECA Nigeria" />
+    <meta name="twitter:description" content="FECA Nigeria, We Redeem the Desolation Of Our Land of our lands and generation" />
+    <meta name="twitter:image" content="" />
+    
     <title>FECA Nigeria</title>
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+            </div>
+            <h1 class="loader-text">FECA Nigeria</h1>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
     <div id="background"></div>
+    
     <nav>
         <div class="logo-container">
-            <img src="logo.jpg">                                                
+            <div class="logo-img">
+            </div>
             <h1>FECA Nigeria</h1>
         </div>
-        <button class="nav-btn"><a href="https://www.facebook.com/profile.php?id=100077773249479" target="_blank">facebook</a></button>
+        <button class="nav-btn">
+            <i class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/profile.php?id=100077773249479" target="_blank">Facebook</a>
+        </button>
     </nav>
+    
     <main>
-        <button class="main-btn"><a href="https://fecanigeria.org/"> Visit Our Website</a></button>
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to FECA Nigeria</h2>
+            <p class="hero-subtitle">Building a better future together</p>
+            <button class="main-btn">
+                <i class="fas fa-globe"></i>
+                <a href="https://fecanigeria.org/" target="_blank">Visit Our Website</a>
+            </button>
+        </div>
     </main>
-    <button class="whatsapp-btn" id="whatsapp-btn">WhatsApp Us</button>
+    
+    <button class="whatsapp-btn" id="whatsapp-btn">
+        <i class="fab fa-instagram"></i>
+        reach us on Instagram
+    </button>
+    
     <script src="script.js"></script>
 </body>
 </html>
